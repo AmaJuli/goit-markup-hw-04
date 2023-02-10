@@ -14,6 +14,7 @@
     --border-color: #e7e9fc;
     --button-shadow: rgba(0, 0, 0, 0.15);
     --about-icon: #F4F4FD;
+    --light-border: #8e8f99;
 }
 
 /*-----------------------------------------------------*/
@@ -319,6 +320,7 @@ img {
     flex-basis: calc((100% - 72px) / 4);
     height: 40px;
     margin-top: 8px;
+        display: flex;
 }
 
 .team-soc-link {
@@ -335,15 +337,87 @@ img {
     text-decoration: none;
 }
 
+.portfolio-item-wrap:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border: 0.5px solid var(--second-bg-color);
+        border-top: none;
+
+}
+
+.portfolio-link:hover {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+            0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+        border: 0.5px solid var(--second-bg-color);
+        border-top: none;
+} 
+
 .projects-descr {
     letter-spacing: 0.02em;
     color: var(--main-title-bg-color);
+}
+
+.customers {
+    padding-top: 130px;
+}
+
+.customers-title {
+    margin-bottom: 72px;
+        font-size: 36px;
+        line-height: 1.11;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: var(--title-color);
+}
+
+.customers-list {
+    display: flex;
+        gap: 24px;
+}
+
+.customers-item {
+    flex-basis: calc((100% - 120px) / 6);
+    height: 88px;
+}
+
+.customers-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    border: 1px solid var(--light-border);
+    color: var(--light-border);
+    width: 100%;
+    height: 100%;
+   
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    color: var(--hover-color);
+    border-color: var(--hover-color);
+}
+
+.customers-logo {
+            fill: currentColor;
 }
 
 .slogan {
     background-color: var(--main-title-bg-color);
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.slogan-div {
+    display: flex;
+        align-items: start;
+}
+
+.slogan-back {
+    display: flex;
+        flex-direction: column;
+        gap: 16px;
 }
 
 .slogan-logo {
@@ -356,6 +430,46 @@ img {
     color: var(--footer-text);
     width: 264px;
     letter-spacing: 0.02em;
+}
+
+.slogan.social {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        margin-left: 120px;
+    }
+
+.slogan-media {
+        font-weight: 500;
+        letter-spacing: 0.02em;
+        color: var(--white);
+}
+
+.slogan-media-list {
+    display: flex;
+        gap: 16px;
+        width: 208px;
+}
+
+.slogan-media-item {
+    flex-basis: calc((100% - 48px) / 4);
+    height: 40px;
+}
+
+.slogan-media-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    
+}
+
+.slogan-media-link:hover,
+.slogan-media-link:focus {
+    background-color: var(--footer-hover-color);
 }
 
 .projects-title {
@@ -384,6 +498,8 @@ img {
 
 .projects-item {
     flex-basis: calc((100% - 48px) / 3);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .projects-title {
