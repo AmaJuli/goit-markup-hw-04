@@ -224,10 +224,21 @@ img {
 }
 
 .hero {
-    background-color: var(--main-text-color);
+    max-width: 1440px;
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
+    margin: 0 auto;
+    height: 600px;
+    background-image: no repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: linear-gradient(to right,
+                rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/people-office.jpg);
+    
+    background-color: var(--main-text-color);
+        
 }
 
 .hero-title {
@@ -432,7 +443,7 @@ img {
     letter-spacing: 0.02em;
 }
 
-.slogan.social {
+.slogan-social {
         display: flex;
         flex-direction: column;
         gap: 16px;
