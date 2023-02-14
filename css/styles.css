@@ -230,7 +230,7 @@ img {
     padding-bottom: 188px;
     margin: 0 auto;
     height: 600px;
-    background-image: no repeat;
+    background-image: no-repeat;
     background-size: cover;
     background-position: center;
     background-image: linear-gradient(to right,
@@ -320,6 +320,7 @@ img {
 
 .team-text {
     letter-spacing: 0.02em;
+    margin-bottom: 8px;
 }
 
 .team-social {
@@ -330,8 +331,7 @@ img {
 .team-soc-item {
     flex-basis: calc((100% - 72px) / 4);
     height: 40px;
-    margin-top: 8px;
-        display: flex;
+    
 }
 
 .team-soc-link {
@@ -343,6 +343,12 @@ img {
         background-color: var(--second-btn-color);
         border-radius: 50%;
 }
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+background-color: var(--footer-hover-color);
+}
+
 
 .portfolio-link {
     text-decoration: none;
@@ -406,8 +412,8 @@ img {
 
 .customers-link:hover,
 .customers-link:focus {
-    color: var(--hover-color);
-    border-color: var(--hover-color);
+    color: var(--button-hover);
+    border-color: var(--butt);
 }
 
 .customers-logo {
@@ -422,7 +428,7 @@ img {
 
 .slogan-div {
     display: flex;
-        align-items: start;
+            align-items: baseline;
 }
 
 .slogan-back {
@@ -459,12 +465,12 @@ img {
 .slogan-media-list {
     display: flex;
         gap: 16px;
-        width: 208px;
 }
 
 .slogan-media-item {
     flex-basis: calc((100% - 48px) / 4);
     height: 40px;
+    width: 40px;
 }
 
 .slogan-media-link {
@@ -520,5 +526,12 @@ img {
 .projects-item-wrap {
     padding: 32px 0 32px 16px;
     border: 1px solid var(--border-color);
+    border-top: none;
+}
+.portfolio-link:hover .portfolio-item-wrap,
+.portfolio-link:hover .portfolio-item-wrap {
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+        0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+    border: 0.5px solid var(--about-icon);
     border-top: none;
 }
