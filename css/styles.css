@@ -264,8 +264,12 @@ img {
 .about-icon {
     background-color: var(--about-icon);
     border-radius: 4px;
+    display: flex;
+    height: 112px;
+    width: 264px;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 8px;
-    padding: 24px 100px;
 }
 
 .about-text {
@@ -346,7 +350,7 @@ img {
 
 .team-soc-link:hover,
 .team-soc-link:focus {
-background-color: var(--footer-hover-color);
+background-color: var(--button-hover);
 }
 
 
@@ -431,11 +435,7 @@ background-color: var(--footer-hover-color);
             align-items: baseline;
 }
 
-.slogan-back {
-    display: flex;
-        flex-direction: column;
-        gap: 16px;
-}
+
 
 .slogan-logo {
     color: var(--white);
@@ -515,9 +515,8 @@ background-color: var(--footer-hover-color);
 
 .projects-item {
     flex-basis: calc((100% - 48px) / 3);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+    
 
 .projects-title {
     margin-bottom: 8;
@@ -528,10 +527,15 @@ background-color: var(--footer-hover-color);
     border: 1px solid var(--border-color);
     border-top: none;
 }
-.portfolio-link:hover .portfolio-item-wrap,
-.portfolio-link:hover .portfolio-item-wrap {
+
+.portfolio-link {
+    display: block
+}
+
+.portfolio-link:hover
+.portfolio-link:focus {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
         0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border: 0.5px solid var(--about-icon);
-    border-top: none;
+    
 }
+
